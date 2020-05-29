@@ -199,55 +199,171 @@ body {
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif; }
 
-.about {
-  display: grid;
-  background: rgba(196, 196, 196, 0.29);
-  height: 150vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  padding-bottom: 20%; }
+@media all and (orientation: portrait) {
+  .about {
+    display: grid;
+    background: rgba(196, 196, 196, 0.29);
+    height: 150vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding-bottom: 20%; }
+  .about-item {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    height: 75vh; }
+  .num {
+    grid-row: 2 / 4;
+    grid-column: 6 / 8;
+    background: #AADC59;
+    border-radius: 50%;
+    color: white;
+    padding: 10%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center; }
+  .productImg-div {
+    grid-row: 8 / 13;
+    grid-column: 2 / 12;
+    align-self: end; }
+    .productImg-div__img {
+      max-width: 100%;
+      height: auto;
+      overflow: hidden; }
+  .explain {
+    grid-row: 4 / 7;
+    grid-column: 2 / 12;
+    text-align: center; }
+    .explain__heading {
+      font-size: 15px;
+      color: black;
+      font-weight: bold; } }
+    @media all and (orientation: portrait) and (min-height: 600px) {
+      .explain__heading {
+        font-size: 17px; } }
+    @media all and (orientation: portrait) and (min-height: 700px) {
+      .explain__heading {
+        font-size: 19px; } }
+    @media all and (orientation: portrait) and (min-height: 800px) {
+      .explain__heading {
+        font-size: 21px; } }
+    @media all and (orientation: portrait) and (min-height: 1200px) {
+      .explain__heading {
+        font-size: 25px; } }
 
-.about-item {
-  display: grid;
-  grid-template-rows: repeat(12, 1fr);
-  grid-template-columns: repeat(12, 1fr);
-  height: 75vh; }
+@media all and (orientation: portrait) {
+    .explain__paragraph {
+      font-size: 12px; } }
+    @media all and (orientation: portrait) and (min-height: 600px) {
+      .explain__paragraph {
+        font-size: 14px; } }
+    @media all and (orientation: portrait) and (min-height: 700px) {
+      .explain__paragraph {
+        font-size: 16px; } }
+    @media all and (orientation: portrait) and (min-height: 800px) {
+      .explain__paragraph {
+        font-size: 18px; } }
+    @media all and (orientation: portrait) and (min-height: 1200px) {
+      .explain__paragraph {
+        font-size: 22px; } }
 
-.num {
-  grid-row: 2 / 4;
-  grid-column: 6 / 8;
-  background: #AADC59;
-  border-radius: 50%;
-  color: white;
-  padding: 10%;
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 40px;
-  font-size: 30px;
-  font-weight: bold;
-  align-self: center;
-  justify-self: center; }
+@media all and (orientation: landscape) {
+  .about {
+    display: grid;
+    background: rgba(196, 196, 196, 0.29);
+    height: 200vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr); } }
+  @media all and (orientation: landscape) and (min-width: 1000px) {
+    .about {
+      height: 100vh;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr; } }
 
-.productImg-div {
-  grid-row: 8 / 13;
-  grid-column: 2 / 12;
-  align-self: end; }
-  .productImg-div__img {
-    max-width: 100%;
-    height: auto;
-    overflow: hidden; }
+@media all and (orientation: landscape) {
+  .about-item {
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    height: 100vh; }
+  .num {
+    grid-row: 3 / 5;
+    grid-column: 3 / 5;
+    background: #AADC59;
+    border-radius: 50%;
+    color: white;
+    padding: 10%;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    align-self: center;
+    justify-self: center; } }
+  @media all and (orientation: landscape) and (min-width: 1000px) {
+    .num {
+      grid-row: 2 / 4;
+      grid-column: 5 / 9; } }
+  @media all and (orientation: landscape) and (min-width: 1200px) {
+    .num {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+      font-size: 60px; } }
 
-.explain {
-  grid-row: 4 / 7;
-  grid-column: 2 / 12;
-  text-align: center; }
-  .explain__heading {
-    font-size: 15px;
-    color: black;
-    font-weight: bold; }
-  .explain__paragraph {
-    font-size: 12px; }
+@media all and (orientation: landscape) {
+  .productImg-div {
+    grid-row: 2 / 12;
+    grid-column: 7 / 13;
+    align-self: center; }
+    .productImg-div__img {
+      max-width: 100%;
+      height: auto;
+      overflow: hidden; } }
+  @media all and (orientation: landscape) and (min-width: 1000px) {
+    .productImg-div {
+      grid-column: 3 / 11;
+      grid-row: 6 / 9; } }
+
+@media all and (orientation: landscape) {
+  .explain {
+    grid-row: 4 / 11;
+    grid-column: 4 / 10;
+    text-align: center; }
+    .explain__heading {
+      font-size: 14px;
+      color: black;
+      font-weight: bold; } }
+    @media all and (orientation: landscape) and (min-width: 650px) {
+      .explain__heading {
+        font-size: 16px; } }
+
+@media all and (orientation: landscape) {
+    .explain__paragraph {
+      font-size: 12px; } }
+    @media all and (orientation: landscape) and (min-width: 650px) {
+      .explain__paragraph {
+        font-size: 14px; } }
+  @media all and (orientation: landscape) and (min-width: 1000px) {
+    .explain {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .explain__heading {
+        font-size: 18px; }
+      .explain__paragraph {
+        font-size: 16px; } }
+  @media all and (orientation: landscape) and (min-width: 1200px) {
+    .explain__heading {
+      font-size: 22px; }
+    .explain__paragraph {
+      font-size: 20px; } }
 
 /*
 .about {
